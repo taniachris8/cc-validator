@@ -2,3 +2,42 @@ body {
     color: #999;
 }
 
+.container {
+    margin: 50px;
+}
+
+.icon {
+    width: 2.5%;
+}
+
+.icon.inactive {
+    filter: grayscale(100%);
+}
+
+.icon.active {
+    filter: none;
+}
+
+.card-validator-form {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+.input {
+    width: 14%;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+}
+
+.submit {
+    font-size: 14px;
+    width: 130px;
+    height: 32px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
