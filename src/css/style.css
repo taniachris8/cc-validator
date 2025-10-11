@@ -31,6 +31,14 @@ body {
     border: 1px solid #c7c7c7;
 }
 
+.input.valid {
+    background-color: rgba(93, 170, 93, 0.637);
+}
+
+.input.invalid {
+    background-color: rgba(211, 61, 61, 0.199);
+}
+
 .submit {
     font-size: 14px;
     width: 130px;

@@ -1,0 +1,36 @@
+Images used in this project:
+
+1. Mir logo
+   Source: https://icons8.ru/icon/59239/%D0%BC%D0%B8%D1%80
+   Author: Icons8
+   License: https://intercom.help/icons8-7fb7577e8170/en/articles/5534926-universal-multimedia-license-agreement-for-icons8
+
+2. MasterCard logo
+   Source: https://www.iconfinder.com/icons/206680/master_method_card_payment_icon
+   Author: Xinh Studio 
+   License: Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+3. American Express logo
+   Source: https://www.iconfinder.com/icons/206682/american_express_method_card_payment_icon
+   Author: Xinh Studio 
+   License: Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+4. Discover logo
+   Source: https://www.iconfinder.com/icons/206686/network_payment_discover_card_method_icon
+   Author: Xinh Studio 
+   License: Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+5. JCB logo
+   Source: https://www.iconfinder.com/icons/358102/card_jcb_payment_icon
+   Author: Xinh Studio 
+   License: Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+6. Diners Club logo
+   Source: https://www.iconfinder.com/icons/472318/card_club_diners_dinner_payment_payment_method_icon
+   Author: Xinh Studio 
+   License: Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/)
+
+7. Visa logo
+   Source: https://www.iconfinder.com/icons/206684/visa_method_card_payment_icon
+   Author: Xinh Studio 
+   License: Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/)
