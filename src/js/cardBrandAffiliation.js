@@ -32,6 +32,5 @@ export function detectBrand(cardNumber) {
        /^220[0-4]/.test(formattedNumber) &&
        (cardLength === 16 || cardLength === 19)
      )
-       return "MIR";
-
+      return "MIR";
 }
