@@ -1,7 +1,7 @@
-import puppetteer from "puppeteer";
+import puppeteer from "puppeteer";
 import { fork } from "child_process";
 
-jest.setTimeout(30000); // default puppeteer timeout
+jest.setTimeout(30000);
 
 describe("Credit Card Validator form", () => {
   let browser = null;
@@ -20,10 +20,10 @@ describe("Credit Card Validator form", () => {
       });
     });
 
-    browser = await puppetteer.launch({
-      // headless: false, // show gui
-      // slowMo: 250,
-      // devtools: true, // show devTools
+    browser = await puppeteer.launch({
+      headless: false,
+      slowMo: 250,
+      devtools: true,
     });
     page = await browser.newPage();
   });
@@ -33,7 +33,26 @@ describe("Credit Card Validator form", () => {
     server.kill();
   });
 
-  test("should add do something", async () => {
+  let form, input, button;
+
+  beforeEach(async () => {
     await page.goto(baseUrl);
+    await page.waitForSelector(".card-validator-form");
+
+    form = await page.$(".card-validator-form");
+    input = await form.$(".input");
+    button = await form.$(".submit");
+  });
+
+  test("should add valid class if card is valid", async () => {
+    await input.type("4773913722100048");
+    await button.click();
+    await page.waitForSelector(".card-validator-form .input.valid");
+  });
+
+  test("should add invalid class if card is invalid", async () => {
+    await input.type("477391372");
+    await button.click();
+    await page.waitForSelector(".card-validator-form .input.invalid");
   });
 });

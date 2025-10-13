@@ -1,10 +1,10 @@
 module.exports = {
-  testEnvironment: "jsdom",
+  testEnvironment: "node",
   transform: {
     "^.+\\.[tj]sx?$": "babel-jest",
   },
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/__mocks__/fileMock.js",
-    "\\.(css|less|scss)$": "identity-obj-proxy", // чтобы не было ошибок при импорте стилей
+    "\\.(css|less|scss)$": "identity-obj-proxy",
   },
 };

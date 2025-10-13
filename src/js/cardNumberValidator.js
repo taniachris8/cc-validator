@@ -4,7 +4,7 @@ export function isValid(cardNumber) {
   if (formattedNumber.length < 13 || formattedNumber.length > 19) return false;
 
   let sum = 0;
-  let isSecondDigit = false; 
+  let isSecondDigit = false;
 
   for (let i = formattedNumber.length - 1; i >= 0; i--) {
     let digit = parseInt(formattedNumber.charAt(i), 10);
@@ -16,9 +16,8 @@ export function isValid(cardNumber) {
       }
     }
     sum += digit;
-    isSecondDigit = !isSecondDigit; 
+    isSecondDigit = !isSecondDigit;
   }
-  
-  return sum % 10 === 0;
 
+  return sum % 10 === 0;
 }
