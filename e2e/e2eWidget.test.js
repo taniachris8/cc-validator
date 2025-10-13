@@ -1,3 +1,5 @@
+/* eslint-disable jest/expect-expect */
+
 import puppeteer from "puppeteer";
 jest.setTimeout(30000);
 

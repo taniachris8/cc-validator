@@ -1,3 +1,5 @@
+/* eslint-disable jest/expect-expect */
+
 import puppeteer from "puppeteer";
 import { fork } from "child_process";
 

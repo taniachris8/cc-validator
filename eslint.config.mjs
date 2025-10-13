@@ -12,6 +12,7 @@ export default [
   {
     rules: {
       "no-unused-vars": "warn",
+      "jest/expect-expect": "off",
     },
   },
   {
