@@ -1,6 +1,8 @@
 const webpack = require("webpack");
 const WebpackDevServer = require("webpack-dev-server");
-const config = require("../webpack.config");
+
+const createConfig = require("../webpack.config");
+const config = createConfig({ development: true });
 
 const compiler = webpack(config);
 
@@ -14,6 +16,20 @@ const server = new WebpackDevServer(
 );
 
 (async () => {
-  await server.start();
-  if (process.send) process.send("ok");
+  try {
+    await server.start();
+    if (process.send) process.send("ok");
+  } catch (e) {
+    console.error(e);
+    process.exit(1);
+  }
 })();
+
+process.on("SIGINT", async () => {
+  await server.stop();
+  process.exit(0);
+});
+process.on("SIGTERM", async () => {
+  await server.stop();
+  process.exit(0);
+});
